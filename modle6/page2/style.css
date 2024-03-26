@@ -477,30 +477,32 @@ button[type="submit"]:hover {
 
 /* Responsive //////////////
 /* For screens smaller than 768px (typical smartphones) */
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      height: auto; 
-  }
-  .nav-links {
-      display: none; 
-  }
-  .hamburger-menu {
-      display: block; 
-  }
-  .logo {
-      font-size: 1.5rem; 
-  }
-  
+#profile {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; 
+  box-sizing: border-box;
 }
 
-/* For screens larger than 768px */
-@media (min-width: 769px) {
-  .hamburger-menu {
-      display: none; 
+.section__pic-container {
+  max-width: 100%; 
+  height: auto;
+}
+
+.section__pic-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) { 
+  #profile {
+    flex-direction: row; 
+    height: 80vh;
   }
-  .nav-links {
-      display: flex; 
-  }
-  
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
