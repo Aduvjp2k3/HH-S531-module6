@@ -386,7 +386,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
 }
 
 .contact-info-upper-container {
@@ -419,6 +419,7 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
 
 /* FOOTER SECTION */
 
@@ -469,4 +470,34 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #228b22;
+}
+
+/* Responsive //////////////
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      height: auto; 
+  }
+  .nav-links {
+      display: none; 
+  }
+  .hamburger-menu {
+      display: block; 
+  }
+  .logo {
+      font-size: 1.5rem; 
+  }
+  
+}
+
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+  .hamburger-menu {
+      display: none; 
+  }
+  .nav-links {
+      display: flex; 
+  }
+  
 }
