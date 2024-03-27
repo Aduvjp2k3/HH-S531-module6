@@ -475,34 +475,3 @@ button[type="submit"]:hover {
   border: 0;
 }
 
-/* Responsive //////////////
-/* For screens smaller than 768px (typical smartphones) */
-#profile {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  padding: 2rem; 
-  box-sizing: border-box;
-}
-
-.section__pic-container {
-  max-width: 100%; 
-  height: auto;
-}
-
-.section__pic-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (min-width: 768px) { 
-  #profile {
-    flex-direction: row; 
-    height: 80vh;
-  }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
